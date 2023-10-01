@@ -1,0 +1,260 @@
+
+/* navbar section */
+.blink-it-navbar{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    position: sticky;
+    top: 0px;
+    /* height: 86px; */
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.verticle-line{
+    border-left: 1px solid rgb(238, 238, 238);
+    height: 55px;
+}
+.location>h5{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: black;
+}
+.location>p{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0px;
+}
+.search-div{
+    background-color: #F8F8F8;
+    border-radius: .5rem;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 0px 12px;
+    color: rgb(130, 130, 130);
+}
+.search-div>input{
+    border: none;
+    width: 40vw;
+    height: 42px;
+    background-color: transparent;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+::placeholder{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+.search-div>input:focus{
+    outline: none;
+}
+
+
+/* scrolable div */
+
+
+.my-container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow-x: scroll;
+    margin: auto;
+    width: 85vw;
+}
+.my-list{
+    white-space: nowrap;
+
+}
+.my-list>img{
+    /* display: inline-block; */
+    padding-inline: 10px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* my categories section */
+.my-categories{
+    width: 85%;
+}
+
+
+/* my categories-div */
+.category-section{
+    margin: auto;
+    width: 85vw;
+}
+.category-section-row{
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.category-section>div>a{
+    color: #0c833c;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.category-section>div>a:hover{
+    cursor: pointer;
+}
+
+
+.my-card{
+    width: 179px;
+    margin-inline: 10px;
+}
+.my-card-time{
+width: fit-content;
+border-radius: 4px;
+background-color: rgb(248, 248, 248);
+padding: 0px 4px;
+font-weight: 700;
+font-size: 9px;
+color: rgb(54, 54, 54);
+}
+
+.my-card-title{
+    font-size: 13px;
+    color: rgb(31, 31, 31);
+    font-weight: 700;
+    white-space: initial;
+}
+.my-card-weight{
+    font-size: 13px;
+    background-color: rgb(248, 248, 248);
+    width: fit-content;
+    color: #666666;
+}
+.card-price{
+    font-size: 12px;
+    color: rgb(31, 31, 31);
+    font-weight: 700;
+}
+button{
+    padding: 8px 24px !important;
+}
+
+/* footer */
+
+
+.my-footer{
+    margin: auto;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my-footer>p{
+    color: #787878;
+
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.useful-links{
+    flex: 2;
+}
+.categories-links{
+    flex: 3;
+}
+table{
+    width: 100%;
+}
+td{
+    font-size: 14px;
+    color: #666666;
+    padding: 3px;
+}
+.row-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    /* flex: 1; */
+}
+.row-2>p{
+    text-align: justify;
+    color: #666666;
+    font-size: 12px;
+    width: 32%;
+}
+
+.download-section>p{
+color: #666666;
+font-size: 14px;
+font-weight: 600;
+margin: 16px;
+}
+.download-btns{
+    background-color: #213b50;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    padding: 10px;
+}
+.social-btns{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-inline: 8px;
+}
+.social{
+    display: flex;
+}
+
+.row-3{
+    text-align: justify;
+    color: #666666;
+    font-size: 15px;
+    padding: 10px;
+}
+/* .special-icons>i{
+    height: 100px;
+    width: 100px;
+} */
+
+
+
+
+@media screen and (max-width:768px) {
+    nav, .row-2, .row-1{
+        flex-direction: column !important;
+        
+    }
+    .verticle-line, .my-hero-section>img{
+        display: none !important;
+    }
+    .row-2>p{
+        width: 90%;
+    }
+    .row-1>div{
+        margin-top: 20px !important;
+    }
+    .row-1>div>h4{
+        text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+    .social{
+        margin-top: 10px;
+    }
+    .search-div{
+        width: 90%;
+    }
+    .my-container{
+        margin-top: 20px;
+    }
+}
